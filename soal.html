@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mute-button {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;/* Sesuaikan dengan ukuran gambar Anda */
+            height: 50px;/* Sesuaikan dengan ukuran gambar Anda */
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="background-music" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">Your browser does not support the audio element.
+</audio>
+<div id="countdown-timer" class="countdown-timer"></div>
+
+    <div class="app">
+        <h1>Quiz Sejarah</h1>
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <br>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <footer>
+        <progress id="timer-progress" max="20" value="20"></progress>
+    </footer>
+    <img src="speaker.png" alt="Mute" id="mute-button" class="mute-button" onclick="toggleMute()">
+    <script src="script.js"></script>
+</body>
+
+</html>
